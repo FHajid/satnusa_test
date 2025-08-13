@@ -6,15 +6,31 @@ import { useState, useEffect } from 'react';
 
 interface Person {
   id: number;
-  Name: string;  // Note the capital N
-  Salary: number; // Note the capital S
+  Name: string;  
+  Salary: number; 
 }
+
+/* SELECT 
+FROM satnusa_test
+WHERE "Salary" = (
+    SELECT "Salary"
+    FROM satnusa_test
+    GROUP BY "Salary"
+    ORDER BY "Salary" DESC
+    OFFSET 1
+    LIMIT 1
+);
+
+*/
+
 
 export default function Test() {
   const [people, setPeople] = useState<Person[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [sortConfig, setSortConfig] = useState<'asc' | 'desc'>('asc');
+
+
 
   useEffect(() => {
     const fetchData = async () => {
