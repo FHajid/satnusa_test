@@ -98,20 +98,47 @@ export default function Home() {
           />
           Examples
         </a>
-        <a
+       <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
+          href="/test"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
+            src="/folder.svg"
+            alt="Folder icon"
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Test folder
+        </a>
+         <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="/test2"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/folder.svg"
+            alt="Folder icon"
+            width={16}
+            height={16}
+          />
+          Test folder
+        </a>
+         <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="/test3"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/folder.svg"
+            alt="Folder icon"
+            width={16}
+            height={16}
+          />
+          Test folder
         </a>
       </footer>
     </div>

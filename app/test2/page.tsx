@@ -9,7 +9,7 @@ interface Person {
   Name: string;  
   Salary: number; 
 }
-
+ 
 /* SELECT 
 FROM satnusa_test
 WHERE "Salary" = (
